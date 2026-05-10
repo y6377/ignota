@@ -177,3 +177,86 @@ nav a:hover{
 
   color:#b0b9d4;
 }
+
+/* =========================
+   VERIFICATION PAGE
+========================= */
+
+.verify-box{
+  border:1px solid rgba(120,170,255,0.3);
+
+  padding:50px 60px;
+
+  width:420px;
+
+  background:rgba(0,0,0,0.2);
+}
+
+.verify-top{
+  margin-bottom:40px;
+
+  letter-spacing:6px;
+
+  color:#8fb3ff;
+
+  font-size:14px;
+}
+
+.checkbox-container{
+  display:flex;
+  align-items:center;
+
+  gap:20px;
+
+  cursor:pointer;
+}
+
+.checkbox-container input{
+  display:none;
+}
+
+.custom-box{
+  width:32px;
+  height:32px;
+
+  border:1px solid #4b8dff;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.custom-box::after{
+  content:"";
+
+  width:16px;
+  height:16px;
+
+  background:#8fb3ff;
+
+  opacity:0;
+
+  transition:0.3s;
+}
+
+.checkbox-container input:checked + .custom-box::after{
+  opacity:1;
+}
+
+.verify-text{
+  font-size:18px;
+
+  letter-spacing:3px;
+
+  color:#d5e2ff;
+}
+
+.warning-text{
+  margin-top:40px;
+
+  font-size:11px;
+
+  letter-spacing:4px;
+
+  color:#6f7fa8;
+}
