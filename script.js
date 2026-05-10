@@ -1,8 +1,17 @@
-const loginBtn = document.getElementById("loginBtn");
+const humanCheck = document.getElementById("human-check");
 
-if(loginBtn){
-  loginBtn.addEventListener("click", () => {
-    window.location.href = "home.html";
+if(humanCheck){
+
+  humanCheck.addEventListener("change", () => {
+
+    if(humanCheck.checked){
+
+      setTimeout(() => {
+
+        window.location.href = "home.html";
+
+      }, 800);
+    }
   });
 }
 
