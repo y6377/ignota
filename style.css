@@ -406,7 +406,7 @@ body{
 
   gap:20px;
 
-  width:900px;
+  width:720px;
 }
 
 .archive-box{
@@ -431,7 +431,7 @@ body{
 
   background:rgba(80,120,255,0.05);
 
-  transform:translateX(8px);
+  transform:translateX(4px);
 }
 
 .archive-box h2{
