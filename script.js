@@ -14,7 +14,7 @@ const title = document.getElementById("typing-title");
 
 if(title){
 
-  const text = "PROJECT : ECLIPSE";
+  const text = "SCIENTIA";
 
   let index = 0;
 
