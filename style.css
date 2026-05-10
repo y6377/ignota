@@ -141,10 +141,10 @@ nav a:hover{
 
   color:#b6ccff;
 
-  font-weight:normal;
+  font-weight:bold;
 
   .main-title::after{
-  content:"_";
+  content:"|";
   animation:blink 1s infinite;
 }
 
@@ -152,7 +152,6 @@ nav a:hover{
   50%{
     opacity:0;
   }
-}
 }
 
 .description{
