@@ -129,15 +129,15 @@ nav a:hover{
 /* 메인 */
 
 .hero{
-  padding:120px 40px;
+  padding:190px 60px;
 }
 
 .main-title{
-  font-size:42px;
+  font-size:52px;
 
   margin-bottom:30px;
 
-  letter-spacing:10px;
+  letter-spacing:14px;
 
   color:#b6ccff;
 
