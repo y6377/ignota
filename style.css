@@ -142,6 +142,7 @@ nav a:hover{
   color:#b6ccff;
 
   font-weight:bold;
+}
 
   .main-title::after{
   content:"|";
