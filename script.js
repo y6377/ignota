@@ -57,3 +57,18 @@ if(cursor){
   });
 
 }
+
+const hoverTargets =
+document.querySelectorAll("a, button, .checkbox-container");
+
+hoverTargets.forEach((item) => {
+
+  item.addEventListener("mouseenter", () => {
+    cursor.classList.add("hide-cursor");
+  });
+
+  item.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hide-cursor");
+  });
+
+});
