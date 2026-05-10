@@ -389,3 +389,67 @@ body{
     opacity:1;
   }
 }
+
+/* =========================
+   ARCHIVE BOX
+========================= */
+
+.archive-list{
+  margin-top:80px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:20px;
+
+  width:900px;
+}
+
+.archive-box{
+  display:flex;
+
+  justify-content:space-between;
+  align-items:center;
+
+  padding:25px 30px;
+
+  border:1px solid rgba(120,170,255,0.2);
+
+  background:rgba(255,255,255,0.02);
+
+  text-decoration:none;
+
+  transition:0.3s;
+}
+
+.archive-box:hover{
+  border-color:#4b8dff;
+
+  background:rgba(80,120,255,0.05);
+
+  transform:translateX(8px);
+}
+
+.archive-box h2{
+  color:#c8d8ff;
+
+  font-size:22px;
+
+  letter-spacing:4px;
+
+  margin-bottom:8px;
+}
+
+.archive-box p{
+  color:#8a97b8;
+
+  font-size:14px;
+}
+
+.archive-go{
+  color:#6da0ff;
+
+  font-size:16px;
+
+  letter-spacing:3px;
+}
