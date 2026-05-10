@@ -189,6 +189,8 @@ nav a:hover{
   width:420px;
 
   background:rgba(0,0,0,0.2);
+
+  box-shadow:0 0 40px rgba(80,120,255,0.08);
 }
 
 .verify-top{
@@ -258,4 +260,28 @@ nav a:hover{
   letter-spacing:4px;
 
   color:#6f7fa8;
+}
+
+.corner-info{
+  position:fixed;
+
+  font-size:10px;
+
+  letter-spacing:4px;
+
+  color:rgba(180,200,255,0.35);
+}
+
+.left-top{
+  top:20px;
+  left:25px;
+}
+
+.right-bottom{
+  bottom:20px;
+  right:25px;
+}
+
+.checkbox-container:hover .custom-box{
+  border-color:#8fb3ff;
 }
