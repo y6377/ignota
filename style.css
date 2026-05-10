@@ -151,6 +151,12 @@ nav a:hover{
   color:#b6ccff;
 
   font-weight:bold;
+
+  text-shadow:
+0 0 5px rgba(100,160,255,0.5),
+0 0 15px rgba(100,160,255,0.25);
+
+animation:titleFlicker 4s infinite;
 }
 
   .cursor{
@@ -355,4 +361,31 @@ body{
   letter-spacing:2px;
 
   white-space:nowrap;
+}
+
+@keyframes titleFlicker{
+
+  0%{
+    opacity:1;
+  }
+
+  96%{
+    opacity:1;
+  }
+
+  97%{
+    opacity:0.75;
+  }
+
+  98%{
+    opacity:1;
+  }
+
+  99%{
+    opacity:0.85;
+  }
+
+  100%{
+    opacity:1;
+  }
 }
