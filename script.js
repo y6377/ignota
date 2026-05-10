@@ -14,7 +14,7 @@ const title = document.getElementById("typing-title");
 
 if(title){
 
-  const text = "IGNOTA";
+  const text = "ARTIFICIAL PLANET:IGNOTA";
 
   let index = 0;
 
