@@ -1,0 +1,163 @@
+/* 전체 기본 설정 */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Times New Roman', serif;
+  background:#020817;
+  color:#8fb3ff;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.login-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+}
+
+.login-container h1{
+  font-size:48px;
+  letter-spacing:8px;
+  margin-bottom:20px;
+}
+
+.login-container input{
+  width:280px;
+  padding:14px;
+
+  background:transparent;
+  border:1px solid #2d5fb8;
+
+  color:white;
+  font-size:16px;
+}
+
+.login-container input::placeholder{
+  color:#6f7fa8;
+}
+
+.login-container button{
+  margin-top:20px;
+
+  width:140px;
+  height:52px;
+
+  background:transparent;
+  border:1px solid #4b8dff;
+
+  color:#8fb3ff;
+  font-weight:bold;
+  letter-spacing:2px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.login-container button:hover{
+  background:#0f1f44;
+}
+
+.status{
+  margin-top:10px;
+  color:#6d7690;
+  letter-spacing:3px;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-body{
+  min-height:100vh;
+}
+
+/* 상단 메뉴 */
+
+header{
+  width:100%;
+  height:70px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 30px;
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+  font-size:30px;
+  letter-spacing:8px;
+  color:#6da0ff;
+}
+
+nav{
+  display:flex;
+  gap:45px;
+}
+
+nav a{
+  color:#9fb8ff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:white;
+}
+
+/* 메인 */
+
+.hero{
+  padding:140px 80px;
+}
+
+.cursor-line{
+  width:2px;
+  height:80px;
+  background:#4b8dff;
+
+  margin-bottom:30px;
+
+  animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:0.2;
+  }
+}
+
+.main-title{
+  font-size:70px;
+  margin-bottom:25px;
+
+  letter-spacing:8px;
+  color:#b6ccff;
+}
+
+.description{
+  width:700px;
+
+  font-size:28px;
+  line-height:1.8;
+
+  color:#b0b9d4;
+}
