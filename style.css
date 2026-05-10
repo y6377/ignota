@@ -142,6 +142,17 @@ nav a:hover{
   color:#b6ccff;
 
   font-weight:normal;
+
+  .main-title::after{
+  content:"_";
+  animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:0;
+  }
+}
 }
 
 .description{
