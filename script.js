@@ -41,3 +41,16 @@ if(title){
 
   typeText();
 }
+
+const cursor = document.querySelector(".custom-cursor");
+
+const coords = document.querySelector(".cursor-coords");
+
+document.addEventListener("mousemove", (e) => {
+
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+
+  coords.textContent =
+  `X:${e.clientX} Y:${e.clientY}`;
+});
