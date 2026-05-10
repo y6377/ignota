@@ -144,9 +144,14 @@ nav a:hover{
   font-weight:bold;
 }
 
-  .main-title::after{
-  content:"|";
+  .cursor{
   animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:0;
+  }
 }
 
 @keyframes blink{
