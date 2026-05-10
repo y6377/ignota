@@ -14,8 +14,8 @@ body{
   cursor:cell;
 
   background-image:
-linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
 
 background-size:40px 40px;
 }
@@ -260,26 +260,6 @@ nav a:hover{
   letter-spacing:4px;
 
   color:#6f7fa8;
-}
-
-.corner-info{
-  position:fixed;
-
-  font-size:10px;
-
-  letter-spacing:4px;
-
-  color:rgba(180,200,255,0.35);
-}
-
-.left-top{
-  top:20px;
-  left:25px;
-}
-
-.right-bottom{
-  bottom:20px;
-  right:25px;
 }
 
 .checkbox-container:hover .custom-box{
