@@ -43,14 +43,17 @@ if(title){
 }
 
 const cursor = document.querySelector(".custom-cursor");
-
 const coords = document.querySelector(".cursor-coords");
 
-document.addEventListener("mousemove", (e) => {
+if(cursor){
 
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
+  document.addEventListener("mousemove", (e) => {
 
-  coords.textContent =
-  `X:${e.clientX} Y:${e.clientY}`;
-});
+    cursor.style.transform =
+    `translate(${e.clientX}px, ${e.clientY}px)`;
+
+    coords.textContent =
+    `X:${e.clientX} Y:${e.clientY}`;
+  });
+
+}
