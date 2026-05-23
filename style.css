@@ -459,14 +459,5 @@ body{
 }
 
 .history-header{
-  position:fixed;
-
-  top:0;
-  left:0;
-
-  width:100%;
-
-  padding:20px 60px;
-
-  box-sizing:border-box;
+  margin-top:-20px;
 }
