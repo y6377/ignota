@@ -476,7 +476,15 @@ body{
   background:rgba(80,120,255,0.05);
 }
 
-.history-header .logo,
-.history-header nav{
-  margin-top:-15px;
+.history-header{
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+
+  padding:20px 60px;
+
+  box-sizing:border-box;
 }
