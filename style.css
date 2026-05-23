@@ -469,7 +469,9 @@ body{
 .history-record{
   margin-top:80px;
 
-  width:700px;
+  width:100%;
+
+  max-width:1000px;
 
   border-left:1px solid rgba(120,170,255,0.2);
 
