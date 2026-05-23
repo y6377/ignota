@@ -476,8 +476,7 @@ body{
   background:rgba(80,120,255,0.05);
 }
 
-.history-header{
-  align-items:flex-start !important;
-
-  padding-top:10px;
+.history-header .logo,
+.history-header nav{
+  margin-top:-15px;
 }
