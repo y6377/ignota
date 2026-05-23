@@ -108,7 +108,7 @@ header{
   justify-content:space-between;
   align-items:center;
 
-  padding:10px 60px;
+  padding:0 30px;
 
   border-bottom:1px solid rgba(255,255,255,0.08);
 }
@@ -474,4 +474,8 @@ body{
   letter-spacing:4px;
 
   background:rgba(80,120,255,0.05);
+}
+
+.history-header{
+  padding-top:10px !important;
 }
