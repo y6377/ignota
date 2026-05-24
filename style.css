@@ -559,6 +559,9 @@ body{
   background:#111;
 
   transition:0.4s;
+
+  box-shadow:
+  0 0 20px rgba(120,100,255,0.08);
 }
 
 .character-card img{
@@ -618,8 +621,9 @@ body{
 .character-card:hover{
   transform:translateY(-8px);
 
-  box-shadow:
-  0 0 30px rgba(130,100,255,0.18);
+   box-shadow:
+  0 0 40px rgba(130,100,255,0.22),
+  0 0 80px rgba(90,120,255,0.12);
 }
 
 .character-card:hover img{
