@@ -539,7 +539,7 @@ body{
 .character-grid{
   display:flex;
 
-  gap:40px;
+  gap:30px;
 
   flex-wrap:wrap;
 }
@@ -547,8 +547,8 @@ body{
 .character-card{
   position:relative;
 
-  width:420px;
-  height:420px;
+  width:340px;
+  height:340px;
 
   overflow:hidden;
 
