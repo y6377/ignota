@@ -294,7 +294,7 @@ body{
 }
 
 .cursor-circle{
-  position:absolute;
+  position:fixed;
 
   width:18px;
   height:18px;
@@ -310,7 +310,7 @@ body{
 .cursor-circle::after{
   content:"";
 
-  position:absolute;
+  position:fixed;
 
   background:#4b8dff;
 
@@ -338,7 +338,7 @@ body{
 }
 
 .cursor-dot{
-  position:absolute;
+  position:fixed;
 
   width:4px;
   height:4px;
@@ -353,7 +353,7 @@ body{
 }
 
 .cursor-coords{
-  position:absolute;
+  position:fixed;
 
   top:18px;
   left:18px;
