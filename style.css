@@ -664,7 +664,7 @@ body{
   color:white;
 
   font-family:
-  Pretendard,
+  'Pretendard',
   sans-serif;
 
   overflow-x:hidden;
@@ -672,7 +672,7 @@ body{
 
 
 
-/* 배경 글로우 */
+/* 배경 */
 
 .profile-bg{
   position:fixed;
@@ -682,7 +682,7 @@ body{
   background:
   radial-gradient(
     circle at top left,
-    rgba(125,70,255,0.12),
+    rgba(125,70,255,0.10),
     transparent 35%
   );
 
@@ -693,11 +693,15 @@ body{
 
 
 
-/* 전체 영역 */
+/* 전체 */
 
 .profile-page{
+  max-width:1400px;
+
+  margin:auto;
+
   padding:
-  40px 70px 80px;
+  40px 60px 80px;
 }
 
 
@@ -705,13 +709,13 @@ body{
 /* 뒤로가기 */
 
 .back-button{
-  color:#8d98b3;
+  color:#8c97b2;
 
   text-decoration:none;
 
-  font-size:18px;
+  font-size:15px;
 
-  transition:0.3s;
+  transition:0.25s;
 }
 
 .back-button:hover{
@@ -720,14 +724,16 @@ body{
 
 
 
-/* 좌우 배치 */
+/* 좌우 */
 
 .profile-layout{
   display:flex;
 
-  gap:80px;
+  gap:55px;
 
-  margin-top:30px;
+  margin-top:25px;
+
+  align-items:flex-start;
 }
 
 
@@ -743,29 +749,29 @@ body{
 /* 대사 */
 
 .quote{
-  font-size:28px;
+  font-size:18px;
 
   font-weight:700;
 
-  line-height:1.5;
+  line-height:1.7;
 
-  margin-bottom:35px;
+  margin-bottom:32px;
 
   color:white;
 }
 
 
 
-/* 코드명 */
+/* 코드 */
 
 .profile-id{
   color:#b26cff;
 
   letter-spacing:4px;
 
-  font-size:13px;
+  font-size:12px;
 
-  margin-bottom:18px;
+  margin-bottom:14px;
 }
 
 
@@ -773,27 +779,27 @@ body{
 /* 이름 */
 
 .profile-name{
-  font-size:82px;
+  font-size:64px;
 
-  line-height:0.9;
+  line-height:0.95;
 
   margin:0;
 }
 
 
 
-/* 영어 이름 */
+/* 영어 */
 
 .profile-eng{
   margin-top:10px;
 
-  font-size:28px;
+  font-size:19px;
 
   color:#92a0bd;
 
-  letter-spacing:2px;
+  letter-spacing:3px;
 
-  margin-bottom:45px;
+  margin-bottom:38px;
 }
 
 
@@ -806,23 +812,25 @@ body{
   grid-template-columns:
   1fr 1fr;
 
-  gap:16px;
+  gap:14px;
 }
 
 
 
+/* 카드 */
+
 .info-card{
   background:
-  rgba(255,255,255,0.03);
+  rgba(255,255,255,0.025);
 
   border:
-  1px solid rgba(255,255,255,0.07);
+  1px solid rgba(255,255,255,0.06);
 
   border-radius:18px;
 
-  padding:22px;
+  padding:18px;
 
-  min-height:110px;
+  min-height:92px;
 
   backdrop-filter:blur(10px);
 
@@ -836,24 +844,24 @@ body{
   translateY(-4px);
 
   border:
-  1px solid rgba(180,120,255,0.3);
+  1px solid rgba(180,120,255,0.22);
 
   box-shadow:
-  0 0 25px rgba(130,90,255,0.12);
+  0 0 24px rgba(130,90,255,0.10);
 }
 
 
 
-/* 카드 작은 제목 */
+/* 카드 제목 */
 
 .info-card span{
   display:block;
 
   color:#7f8ba7;
 
-  font-size:13px;
+  font-size:11px;
 
-  margin-bottom:14px;
+  margin-bottom:12px;
 }
 
 
@@ -861,7 +869,7 @@ body{
 /* 카드 내용 */
 
 .info-card strong{
-  font-size:18px;
+  font-size:15px;
 
   line-height:1.5;
 }
@@ -871,17 +879,17 @@ body{
 /* 보라 박스 */
 
 .past-box{
-  margin-top:20px;
+  margin-top:16px;
 
   background:
-  rgba(88,0,160,0.18);
+  rgba(88,0,160,0.16);
 
   border:
-  1px solid rgba(165,90,255,0.35);
+  1px solid rgba(165,90,255,0.25);
 
   border-radius:18px;
 
-  padding:22px;
+  padding:18px;
 }
 
 
@@ -891,15 +899,15 @@ body{
 
   color:#c27dff;
 
-  font-size:13px;
+  font-size:11px;
 
-  margin-bottom:10px;
+  margin-bottom:8px;
 }
 
 
 
 .past-box strong{
-  font-size:28px;
+  font-size:20px;
 }
 
 
@@ -909,7 +917,7 @@ body{
 .profile-right{
   flex:1;
 
-  padding-top:110px;
+  padding-top:92px;
 }
 
 
@@ -919,7 +927,7 @@ body{
 .content-section,
 .warning-section,
 .secret-section{
-  margin-bottom:55px;
+  margin-bottom:42px;
 }
 
 
@@ -927,9 +935,9 @@ body{
 /* 제목 */
 
 .profile-right h3{
-  font-size:42px;
+  font-size:26px;
 
-  margin-bottom:18px;
+  margin-bottom:14px;
 }
 
 
@@ -944,7 +952,7 @@ body{
   background:
   rgba(255,255,255,0.08);
 
-  margin-bottom:28px;
+  margin-bottom:22px;
 }
 
 
@@ -954,21 +962,21 @@ body{
 .profile-text{
   color:#d0d7ea;
 
-  font-size:18px;
+  font-size:15px;
 
   line-height:2;
 }
 
 
 
-/* 경고 */
+/* 경고 제목 */
 
 .warning-section h4{
-  color:#ff5b5b;
+  color:#ff6464;
 
-  font-size:32px;
+  font-size:22px;
 
-  margin-bottom:20px;
+  margin-bottom:16px;
 }
 
 
@@ -977,36 +985,36 @@ body{
 
 .warning-box{
   background:
-  rgba(120,0,0,0.14);
+  rgba(120,0,0,0.12);
 
   border:
-  1px solid rgba(255,70,70,0.2);
+  1px solid rgba(255,70,70,0.16);
 
   border-radius:18px;
 
-  padding:28px;
+  padding:22px;
 
   line-height:2;
 
   color:#ffd8d8;
 
-  font-size:17px;
+  font-size:15px;
 }
 
 
 
-/* 비공개 박스 */
+/* 비공개 */
 
 .secret-box{
-  height:140px;
+  height:120px;
 
   border-radius:18px;
 
   border:
-  1px solid rgba(255,200,0,0.25);
+  1px solid rgba(255,200,0,0.20);
 
   background:
-  rgba(255,200,0,0.04);
+  rgba(255,200,0,0.03);
 
   display:flex;
 
@@ -1016,13 +1024,13 @@ body{
 
   align-items:center;
 
-  gap:12px;
+  gap:10px;
 
   color:#8ea0cb;
 
-  letter-spacing:4px;
+  letter-spacing:3px;
 
-  font-size:13px;
+  font-size:11px;
 
   transition:0.35s;
 
@@ -1033,13 +1041,13 @@ body{
 
 .secret-box:hover{
   background:
-  rgba(255,200,0,0.08);
+  rgba(255,200,0,0.06);
 
   border:
-  1px solid rgba(255,220,120,0.4);
+  1px solid rgba(255,220,120,0.32);
 
   box-shadow:
-  0 0 30px rgba(255,200,0,0.08);
+  0 0 24px rgba(255,200,0,0.05);
 }
 
 
@@ -1047,5 +1055,5 @@ body{
 /* 자물쇠 */
 
 .lock{
-  font-size:26px;
+  font-size:22px;
 }
