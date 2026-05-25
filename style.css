@@ -1110,3 +1110,45 @@ body{
 
   z-index:-2;
 }
+
+.secret-open{
+  display:none;
+
+  width:100%;
+}
+
+
+
+.secret-box.active
+.secret-closed{
+  display:none;
+}
+
+
+
+.secret-box.active
+.secret-open{
+  display:block;
+}
+
+
+
+.secret-ref{
+  color:#ffcf5a;
+
+  font-size:13px;
+
+  letter-spacing:3px;
+
+  margin-bottom:18px;
+}
+
+
+
+.secret-text{
+  color:#d5dcef;
+
+  line-height:2;
+
+  font-size:15px;
+}
