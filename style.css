@@ -663,14 +663,10 @@ body{
 
   color:white;
 
-  font-family:
-  'Pretendard',
-  sans-serif;
+  cursor:none;
 
   overflow-x:hidden;
 }
-
-
 
 /* 배경 */
 
@@ -1056,4 +1052,8 @@ body{
 
 .lock{
   font-size:22px;
+}
+
+.custom-cursor{
+  z-index:99999;
 }
