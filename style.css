@@ -653,18 +653,26 @@ body{
 }
 
 /* =========================
-   PROFILE
+   PROFILE PAGE
 ========================= */
 
 .profile-body{
-  background:#030712;
+  margin:0;
 
-  min-height:100vh;
+  background:#040816;
 
   color:white;
 
+  font-family:
+  Pretendard,
+  sans-serif;
+
   overflow-x:hidden;
 }
+
+
+
+/* 배경 글로우 */
 
 .profile-bg{
   position:fixed;
@@ -674,63 +682,123 @@ body{
   background:
   radial-gradient(
     circle at top left,
-    rgba(120,80,255,0.15),
-    transparent 40%
+    rgba(125,70,255,0.12),
+    transparent 35%
   );
 
   pointer-events:none;
+
+  z-index:-1;
 }
+
+
+
+/* 전체 영역 */
 
 .profile-page{
   padding:
-  70px 70px 120px;
+  40px 70px 80px;
 }
 
+
+
+/* 뒤로가기 */
+
 .back-button{
-  color:#95a2c6;
+  color:#8d98b3;
 
   text-decoration:none;
 
   font-size:18px;
+
+  transition:0.3s;
 }
 
-.profile-top{
+.back-button:hover{
+  color:white;
+}
+
+
+
+/* 좌우 배치 */
+
+.profile-layout{
   display:flex;
 
   gap:80px;
 
-  margin-top:40px;
+  margin-top:30px;
 }
+
+
+
+/* 왼쪽 */
 
 .profile-left{
   width:360px;
 }
 
-.profile-code{
-  color:#b77cff;
+
+
+/* 대사 */
+
+.quote{
+  font-size:28px;
+
+  font-weight:700;
+
+  line-height:1.5;
+
+  margin-bottom:35px;
+
+  color:white;
+}
+
+
+
+/* 코드명 */
+
+.profile-id{
+  color:#b26cff;
 
   letter-spacing:4px;
 
-  font-size:14px;
+  font-size:13px;
 
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
+
+
+
+/* 이름 */
 
 .profile-name{
   font-size:82px;
 
   line-height:0.9;
 
-  margin-bottom:10px;
+  margin:0;
 }
+
+
+
+/* 영어 이름 */
 
 .profile-eng{
-  color:#8d9ab8;
+  margin-top:10px;
 
-  font-size:48px;
+  font-size:28px;
 
-  margin-bottom:50px;
+  color:#92a0bd;
+
+  letter-spacing:2px;
+
+  margin-bottom:45px;
 }
+
+
+
+/* 정보 카드 */
 
 .info-grid{
   display:grid;
@@ -738,95 +806,246 @@ body{
   grid-template-columns:
   1fr 1fr;
 
-  gap:18px;
+  gap:16px;
 }
 
-.info-box{
+
+
+.info-card{
   background:
   rgba(255,255,255,0.03);
 
   border:
-  1px solid rgba(255,255,255,0.08);
+  1px solid rgba(255,255,255,0.07);
 
   border-radius:18px;
 
-  padding:24px;
+  padding:22px;
 
   min-height:110px;
+
+  backdrop-filter:blur(10px);
+
+  transition:0.35s;
 }
 
-.info-box span{
+
+
+.info-card:hover{
+  transform:
+  translateY(-4px);
+
+  border:
+  1px solid rgba(180,120,255,0.3);
+
+  box-shadow:
+  0 0 25px rgba(130,90,255,0.12);
+}
+
+
+
+/* 카드 작은 제목 */
+
+.info-card span{
   display:block;
 
-  color:#8d9ab8;
+  color:#7f8ba7;
+
+  font-size:13px;
 
   margin-bottom:14px;
-
-  font-size:14px;
 }
 
-.info-box strong{
-  font-size:24px;
+
+
+/* 카드 내용 */
+
+.info-card strong{
+  font-size:18px;
+
+  line-height:1.5;
 }
+
+
+
+/* 보라 박스 */
+
+.past-box{
+  margin-top:20px;
+
+  background:
+  rgba(88,0,160,0.18);
+
+  border:
+  1px solid rgba(165,90,255,0.35);
+
+  border-radius:18px;
+
+  padding:22px;
+}
+
+
+
+.past-box span{
+  display:block;
+
+  color:#c27dff;
+
+  font-size:13px;
+
+  margin-bottom:10px;
+}
+
+
+
+.past-box strong{
+  font-size:28px;
+}
+
+
+
+/* 오른쪽 */
 
 .profile-right{
   flex:1;
 
-  padding-top:120px;
+  padding-top:110px;
 }
+
+
+
+/* 섹션 */
+
+.content-section,
+.warning-section,
+.secret-section{
+  margin-bottom:55px;
+}
+
+
+
+/* 제목 */
 
 .profile-right h3{
-  font-size:38px;
+  font-size:42px;
 
-  margin-bottom:25px;
+  margin-bottom:18px;
 }
 
-.profile-text{
-  color:#c3cee8;
 
-  line-height:1.9;
+
+/* 선 */
+
+.line{
+  width:100%;
+
+  height:1px;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  margin-bottom:28px;
+}
+
+
+
+/* 설명 */
+
+.profile-text{
+  color:#d0d7ea;
 
   font-size:18px;
 
-  margin-bottom:40px;
+  line-height:2;
 }
 
-.danger-box{
-  border:
-  1px solid
-  rgba(255,70,70,0.4);
 
+
+/* 경고 */
+
+.warning-section h4{
+  color:#ff5b5b;
+
+  font-size:32px;
+
+  margin-bottom:20px;
+}
+
+
+
+/* 빨간 박스 */
+
+.warning-box{
   background:
-  rgba(120,0,0,0.12);
+  rgba(120,0,0,0.14);
 
-  color:#ff7272;
+  border:
+  1px solid rgba(255,70,70,0.2);
+
+  border-radius:18px;
 
   padding:28px;
 
-  border-radius:18px;
+  line-height:2;
 
-  margin-bottom:40px;
+  color:#ffd8d8;
 
-  font-size:22px;
+  font-size:17px;
 }
+
+
+
+/* 비공개 박스 */
 
 .secret-box{
-  border:
-  1px solid
-  rgba(255,200,0,0.25);
-
-  background:
-  rgba(255,200,0,0.06);
+  height:140px;
 
   border-radius:18px;
 
-  padding:30px;
+  border:
+  1px solid rgba(255,200,0,0.25);
+
+  background:
+  rgba(255,200,0,0.04);
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:12px;
+
+  color:#8ea0cb;
+
+  letter-spacing:4px;
+
+  font-size:13px;
+
+  transition:0.35s;
+
+  cursor:pointer;
 }
 
-.secret-title{
-  color:#ffd34d;
 
-  font-size:24px;
 
-  margin-bottom:20px;
+.secret-box:hover{
+  background:
+  rgba(255,200,0,0.08);
+
+  border:
+  1px solid rgba(255,220,120,0.4);
+
+  box-shadow:
+  0 0 30px rgba(255,200,0,0.08);
+}
+
+
+
+/* 자물쇠 */
+
+.lock{
+  font-size:26px;
 }
