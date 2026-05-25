@@ -1208,10 +1208,14 @@ body{
 .secret-open{
   opacity:1;
 
-  max-height:500px;
+  max-height:1000px;
 
   transform:
   translateY(0);
+
+  margin-top:10px;
+
+  padding-bottom:34px;
 }
 
 
