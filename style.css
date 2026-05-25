@@ -745,17 +745,32 @@ body{
 /* 대사 */
 
 .quote{
-  font-size:18px;
+  font-size:54px;
 
-  font-weight:700;
+  font-weight:800;
 
-  line-height:1.7;
+  line-height:1.25;
 
-  margin-bottom:32px;
+  letter-spacing:-1px;
+
+  margin-bottom:40px;
+
+  max-width:1100px;
 
   color:white;
 }
 
+.quote-mark{
+  color:#b26cff;
+
+  font-size:58px;
+
+  margin-right:14px;
+
+  position:relative;
+
+  top:8px;
+}
 
 
 /* 코드 */
