@@ -1073,3 +1073,13 @@ body{
 .custom-cursor{
   z-index:99999;
 }
+
+.profile-header{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:40px 60px 0;
+}
