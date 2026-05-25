@@ -1111,6 +1111,10 @@ body{
   z-index:-2;
 }
 
+/* =========================
+   SECRET BOX
+========================= */
+
 .secret-box{
   min-height:140px;
 
@@ -1127,6 +1131,8 @@ body{
   cursor:pointer;
 
   transition:0.35s;
+
+  overflow:hidden;
 }
 
 
@@ -1160,6 +1166,8 @@ body{
   letter-spacing:3px;
 
   font-size:11px;
+
+  transition:0.4s;
 }
 
 
@@ -1167,21 +1175,43 @@ body{
 /* 열린 상태 */
 
 .secret-open{
-  display:none;
+  opacity:0;
+
+  max-height:0;
+
+  overflow:hidden;
+
+  transform:
+  translateY(10px);
+
+  transition:
+  opacity 0.5s ease,
+  transform 0.5s ease,
+  max-height 0.5s ease;
+}
+
+
+
+/* 클릭 후 */
+
+.secret-box.active
+.secret-closed{
+  opacity:0;
+
+  transform:
+  translateY(-10px);
 }
 
 
 
 .secret-box.active
 .secret-open{
-  display:block;
-}
+  opacity:1;
 
+  max-height:500px;
 
-
-.secret-box.active
-.secret-closed{
-  display:none;
+  transform:
+  translateY(0);
 }
 
 
