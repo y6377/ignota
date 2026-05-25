@@ -751,7 +751,7 @@ body{
 
   gap:16px;
 
-  font-size:28px;
+  font-size:30px;
 
   font-weight:700;
 
@@ -760,6 +760,8 @@ body{
   margin-bottom:40px;
 
   color:white;
+
+  white-space:nowrap;
 }
 
 .quote-mark{
