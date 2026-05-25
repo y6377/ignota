@@ -1177,47 +1177,36 @@ body{
 .secret-open{
   opacity:0;
 
-  max-height:0;
-
-  overflow:hidden;
+  display:none;
 
   transform:
   translateY(10px);
 
   transition:
-  opacity 0.5s ease,
-  transform 0.5s ease,
-  max-height 0.5s ease;
+  opacity 0.4s ease,
+  transform 0.4s ease;
 }
-
-
 
 /* 클릭 후 */
 
 .secret-box.active
-.secret-closed{
-  opacity:0;
+.secret-open{
+  display:block;
+
+  opacity:1;
 
   transform:
-  translateY(-10px);
+  translateY(0);
+
+  margin-top:14px;
 }
 
 
 
 .secret-box.active
-.secret-open{
-  opacity:1;
-
-  max-height:1000px;
-
-  transform:
-  translateY(0);
-
-  margin-top:10px;
-
-  padding-bottom:34px;
+.secret-closed{
+  display:none;
 }
-
 
 
 /* 자물쇠 */
