@@ -96,3 +96,23 @@ cards.forEach((card)=>{
   observer.observe(card);
 
 });
+
+const secretBox =
+document.querySelector(".secret-box");
+
+if(secretBox){
+
+  secretBox.addEventListener(
+    "click",
+
+    ()=>{
+
+      secretBox.classList.toggle(
+        "active"
+      );
+
+    }
+
+  );
+
+}
