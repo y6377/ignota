@@ -1177,16 +1177,45 @@ body{
 .secret-open{
   opacity:0;
 
-  display:none;
+  max-height:0;
 
-  transform:
-  translateY(10px);
+  overflow:hidden;
+
+  transform:translateY(10px);
 
   transition:
-  opacity 0.4s ease,
-  transform 0.4s ease;
+  opacity 0.45s ease,
+  transform 0.45s ease,
+  max-height 0.6s ease;
+
+  pointer-events:none;
 }
 
+
+
+.secret-box.active
+.secret-open{
+  opacity:1;
+
+  max-height:1000px;
+
+  transform:translateY(0);
+
+  pointer-events:auto;
+}
+
+
+
+.secret-box.active
+.secret-closed{
+  opacity:0;
+
+  transform:translateY(-10px);
+
+  transition:0.3s;
+
+  position:absolute;
+}
 /* 클릭 후 */
 
 .secret-box.active
